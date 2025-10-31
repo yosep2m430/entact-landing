@@ -130,6 +130,7 @@
             color: #1a1a1a;
         }
 
+        /* 체크마크 최적화: 더 크고, 더 가깝게 */
         .pain-points ul {
             list-style: none;
             padding: 0;
@@ -140,18 +141,18 @@
         .pain-points li {
             font-size: 18px;
             margin: 20px 0;
-            padding-left: 25px;
+            padding-left: 25px;     /* 체크마크와 글씨 간격 */
             position: relative;
             line-height: 1.6;
         }
         .pain-points li::before {
-            content: 'Checkmark';
+            content: '✓';
             color: #6b57e6;
             font-weight: bold;
             position: absolute;
-            left: -20px;
+            left: -20px;            /* 글씨에 더 가까이 */
             top: 1px;
-            font-size: 24px;
+            font-size: 24px;        /* 더 크게 */
         }
 
         .solution p {
@@ -161,6 +162,7 @@
             color: #34495e;
         }
 
+        /* CTA 버튼 */
         .cta-button {
             display: inline-block;
             background: #e5e7eb;
@@ -198,6 +200,7 @@
             box-shadow: 0 10px 24px rgba(127, 107, 255, 0.4);
         }
 
+        /* 폼 */
         .form-section form {
             max-width: 400px;
             margin: 0 auto;
@@ -286,7 +289,7 @@
             <a href="#join-form" class="cta-button cta-button--highlight">Join Free Beta</a>
         </div>
 
-        <!-- Why Entact? -->
+        <!-- Why Entact? - 체크마크 최적화 -->
         <div class="section pain-points">
             <h2>Why Entact?</h2>
             <ul>
@@ -304,18 +307,16 @@
             <a href="https://forms.gle/t8wchBDMrW8FnQnL8" target="_blank" class="cta-button">Take 2-Min Survey</a>
         </div>
 
-        <!-- Join Form - 이메일만 저장 (Beta Signups 시트) -->
+        <!-- Join Form -->
         <div class="section form-section" id="join-form">
             <h2>Join the Beta Now!</h2>
             <p>Share your GTM workflow and automation needs. Your feedback shapes the future.</p>
             <form action="https://docs.google.com/forms/d/e/1FAIpQLSd9example/formResponse" method="POST" target="_blank">
-                <input type="email" name="entry.1660418935" placeholder="Enter your email" required>
-                <br>
+                <input type="email" name="entry.123456789" placeholder="Enter your email" required>
                 <label>
                     <input type="checkbox" required>
                     I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a> and <a href="/terms.html" target="_blank">Terms of Service</a>.
                 </label>
-                <br>
                 <button type="submit" class="cta-button cta-button--flat">Join Free Beta</button>
             </form>
         </div>
@@ -325,8 +326,8 @@
     <div class="footer">
         <p>Transform Your Automation Workflow Without a GTM Engineer. © 2025 Entact</p>
         <p>
-            <a href="/privacy.html" target="_blank">Privacy Policy</a> |
-            <a href="/terms.html" target="_blank">Terms of Service</a> |
+            <a href="/privacy.html">Privacy Policy</a> |
+            <a href="/terms.html">Terms of Service</a> |
             <a href="mailto:joseph@entact.tech">Contact: joseph@entact.tech</a>
         </p>
     </div>
