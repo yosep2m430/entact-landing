@@ -130,7 +130,7 @@
             color: #1a1a1a;
         }
 
-        /* 체크마크 수정: 'Checkmark' → '✓' */
+        /* 체크마크 최적화: 더 크고, 더 가깝게 */
         .pain-points ul {
             list-style: none;
             padding: 0;
@@ -141,17 +141,18 @@
         .pain-points li {
             font-size: 18px;
             margin: 20px 0;
-            padding-left: 36px;
+            padding-left: 32px;     /* 체크마크와 글씨 간격 */
             position: relative;
             line-height: 1.6;
         }
         .pain-points li::before {
-            content: '✓';           /* 체크마크 기호로 수정 */
+            content: '✓';
             color: #6b57e6;
             font-weight: bold;
             position: absolute;
-            left: -32px;
-            font-size: 20px;
+            left: -28px;            /* 글씨에 더 가까이 */
+            top: 1px;
+            font-size: 24px;        /* 더 크게 */
         }
 
         .solution p {
@@ -161,7 +162,7 @@
             color: #34495e;
         }
 
-        /* Take 2-Min Survey: 회색 + 검정 글자 */
+        /* CTA 버튼 */
         .cta-button {
             display: inline-block;
             background: #e5e7eb;
@@ -258,11 +259,11 @@
             .cta-button { padding: 14px 36px; font-size: 17px; }
             .pain-points li { 
                 font-size: 17px; 
-                padding-left: 32px;
+                padding-left: 28px;
             }
             .pain-points li::before { 
-                left: -28px; 
-                font-size: 18px;
+                left: -24px; 
+                font-size: 22px;
             }
             .footer { margin: 20px auto 40px; padding: 24px 16px; }
         }
@@ -288,7 +289,7 @@
             <a href="#join-form" class="cta-button cta-button--highlight">Join Free Beta</a>
         </div>
 
-        <!-- Why Entact? - 체크마크 정상화 -->
+        <!-- Why Entact? - 체크마크 최적화 -->
         <div class="section pain-points">
             <h2>Why Entact?</h2>
             <ul>
@@ -299,7 +300,7 @@
             </ul>
         </div>
 
-        <!-- Solution - 회색 버튼 -->
+        <!-- Solution -->
         <div class="section solution">
             <h2>Design GTM Innovation Together</h2>
             <p>Entact is a no-code automation tool designed by GTM data scientists for RevOps teams. Connect tools like HubSpot and Stripe in minutes, with AI-driven optimization suggestions. Healthcare and e-commerce templates coming soon.</p>
