@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entact: Transform Your Automation Workflow Without a GTM Engineer</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 0; background-color: #ffffff; color: #2c3e50; text-align: center; overflow-x: hidden; }
+        .container { max-width: 820px; margin: 0 auto; padding: 0; }
+        .header { background: linear-gradient(135deg, #6b57e6 0%, #8c6bff 100%); color: white; padding: 60px 20px; height: 80vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; margin: 60px 40px; border-radius: 20px; box-sizing: border-box; }
+        .header img { max-width: 150px; margin-bottom: 20px; }
+        .header h1 { font-size: 40px; margin: 0; font-weight: 700; }
+        .header p { font-size: 20px; margin: 10px 0 20px; }
+        .cta-button { display: inline-block; background: #f3f4f6; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-size: 18px; font-weight: 600; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button:hover { transform: scale(1.05); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); }
+        .cta-button--highlight { background: #ffffff; color: #000000; padding: 15px 40px; font-size: 18px; border: none; border-radius: 50px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button--highlight:hover { transform: scale(1.05); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); }
+        .cta-button--flat { background: linear-gradient(135deg, #7f6bff 0%, #977bff 100%); color: white; padding: 15px 58px; font-size: 18px; border: none; border-radius: 50px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button--flat:hover { transform: scale(1.05); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); }
+        .section { padding: 40px 20px; height: 80vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; transform-origin: center center; margin: 40px 40px; border-radius: 20px; box-sizing: border-box; }
+        .section.active, .header.active { transform: scale(1); opacity: 1; z-index: 10; }
+        .section:not(.active), .header:not(.active) { transform: scale(0.8); opacity: 0.5; z-index: 1; }
+        .pain-points { background-color: #ffffff; padding: 30px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 820px; }
+        .pain-points h2 { font-size: 28px; margin-bottom: 20px; color: #2c3e50; }
+        .pain-points ul { list-style: none; padding: 0; text-align: left; max-width: 600px; margin: 0 auto; }
+        .pain-points li { font-size: 18px; margin: 15px 0; line-height: 1.5; }
+        .solution { background-color: #f7f9fc; }
+        .solution h2 { font-size: 28px; margin-bottom: 20px; color: #2c3e50; }
+        .solution p { font-size: 18px; max-width: 600px; margin: 0 auto 20px; line-height: 1.6; }
+        .form-section { background-color: #ffffff; }
+        .form-section h2 { font-size: 24px; margin-bottom: 20px; color: #2c3e50; }
+        .form-section label { margin-bottom: 20px; display: inline-block; font-size: 14px; }
+        .footer { background: linear-gradient(135deg, #6b57e6 0%, #8c6bff 100%); color: white; padding: 20px; font-size: 14px; width: 100%; position: relative; max-width: 820px; margin: 0 auto; }
+        .footer a { color: #ffffff; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="header section">
+        <img src="https://i.imgur.com/6qY8z3K.png" alt="Entact Logo">
+        <h1>Entact: Transform Your Automation Workflow Without a GTM Engineer</h1>
+        <p>Perfect GTM without hiring a GTM engineer? Let Entact Fix It.</p>
+        <a href="#join-form" class="cta-button cta-button--highlight">Join Free Beta</a>
+    </div>
+
+    <div class="container">
+
+        <div class="section pain-points">
+            <h2>Why Entact?</h2>
+            <ul>
+                <li><strong>No-Code GTM Automation</strong>: Connect CRM and billing tools without coding, replacing manual GTM engineer tasks.</li>
+                <li><strong>SaaS Templates</strong>: Standardized workflows from lead to payment for quick setup.</li>
+                <li><strong>AI-Powered Suggestions</strong>: Data-driven insights like a GTM engineer (e.g., "Lead conversion down, adjust sales follow-up").</li>
+                <li><strong>Future Features</strong>: Multi-tool integration and autonomous agents for GTM innovation.</li>
+            </ul>
+        </div>
+
+        <div class="section solution">
+            <h2>Design GTM Innovation Together</h2>
+            <p>Entact is a no-code automation tool designed by GTM data scientists for RevOps teams. Connect tools like HubSpot and Stripe in minutes, with AI-driven optimization suggestions. Healthcare and e-commerce templates coming soon.</p>
+            <a href="#" class="cta-button">Take 2-Min Survey</a>
+        </div>
+
+        <div class="section form-section" id="join-form">
+            <h2>Join the Beta Now!</h2>
+            <p>Share your GTM workflow and automation needs. Your feedback shapes the future.</p>
+            <form data-netlify="true" name="entact-beta" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc; margin: 10px;">
+                <br>
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a> and <a href="/terms.html" target="_blank">Terms of Service</a>.
+                </label>
+                <br>
+                <button type="submit" class="cta-button cta-button--flat">Join Free Beta</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Transform Your Automation Workflow Without a GTM Engineer. © 2025 Entact</p>
+        <p>
+            <a href="/privacy.html">Privacy Policy</a> |
+            <a href="/terms.html">Terms of Service</a> |
+            <a href="mailto:joseph@entact.tech">Contact: joseph@entact.tech</a>
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.section');
+            if (!sections.length) return;
+            const updateActiveSection = () => {
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                const viewportCenter = windowHeight / 2;
+                let closestSection = null;
+                let minDistance = Infinity;
+                sections.forEach(section => {
+                    if (!section) return;
+                    const rect = section.getBoundingClientRect();
+                    const sectionCenter = rect.top + rect.height / 2;
+                    const distance = Math.abs(sectionCenter - viewportCenter);
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        closestSection = section;
+                    }
+                });
+                sections.forEach(section => {
+                    if (section && section.classList) {
+                        if (section === closestSection) {
+                            section.classList.add('active');
+                        } else {
+                            section.classList.remove('active');
+                        }
+                    }
+                });
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(() => updateActiveSection());
+            }, { root: null, threshold: 0.1 });
+            sections.forEach(section => { if (section) observer.observe(section); });
+            window.addEventListener('scroll', updateActiveSection);
+            window.addEventListener('resize', updateActiveSection);
+            updateActiveSection();
+        });
+    </script>
+
+</body>
+</html>
