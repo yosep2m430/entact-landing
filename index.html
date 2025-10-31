@@ -130,6 +130,7 @@
             color: #1a1a1a;
         }
 
+        /* Why Entact? 리스트 - 오버랩 완전 제거 */
         .pain-points ul {
             list-style: none;
             padding: 0;
@@ -139,16 +140,19 @@
         }
         .pain-points li {
             font-size: 18px;
-            margin: 18px 0;
-            padding-left: 4px;
+            margin: 20px 0;
+            padding-left: 36px; /* 아이콘 공간 확보 */
             position: relative;
+            line-height: 1.6;
         }
         .pain-points li::before {
             content: 'Checkmark';
             color: #6b57e6;
             font-weight: bold;
             position: absolute;
-            left: -28px;
+            left: 0;
+            top: 2px;
+            font-size: 20px;
         }
 
         .solution p {
@@ -158,7 +162,7 @@
             color: #34495e;
         }
 
-        /* CTA 버튼 - 원래 스타일 유지 */
+        /* CTA 버튼 */
         .cta-button {
             display: inline-block;
             background: #f3f4f6;
@@ -178,14 +182,12 @@
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
         }
 
-        /* 헤더 버튼만 하이라이트 */
         .cta-button--highlight {
             background: #ffffff;
             color: #000000;
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
         }
 
-        /* 폼 제출 버튼만 flat 스타일 */
         .cta-button--flat {
             background: linear-gradient(135deg, #7f6bff 0%, #977bff 100%);
             color: white;
@@ -254,7 +256,14 @@
             .header p { font-size: 18px; }
             h2 { font-size: 26px; }
             .cta-button { padding: 14px 36px; font-size: 17px; }
-            .pain-points li { font-size: 17px; }
+            .pain-points li { 
+                font-size: 17px; 
+                padding-left: 32px;
+            }
+            .pain-points li::before { 
+                left: 0; 
+                font-size: 18px;
+            }
             .footer { margin: 20px auto 40px; padding: 24px 16px; }
         }
 
@@ -279,7 +288,7 @@
             <a href="#join-form" class="cta-button cta-button--highlight">Join Free Beta</a>
         </div>
 
-        <!-- Why Entact? -->
+        <!-- Why Entact? - 오버랩 제거 완료 -->
         <div class="section pain-points">
             <h2>Why Entact?</h2>
             <ul>
@@ -290,7 +299,7 @@
             </ul>
         </div>
 
-        <!-- Solution - 버튼 원래대로 복구 -->
+        <!-- Solution -->
         <div class="section solution">
             <h2>Design GTM Innovation Together</h2>
             <p>Entact is a no-code automation tool designed by GTM data scientists for RevOps teams. Connect tools like HubSpot and Stripe in minutes, with AI-driven optimization suggestions. Healthcare and e-commerce templates coming soon.</p>
